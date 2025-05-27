@@ -17,11 +17,9 @@ def analyse_sentiment(phrase):
     except requests.exceptions.RequestException as e:
         st.error(f"Erreur de connexion à l'API : {e}")
         logger.error(f"Erreur de connexion à l'API : {e}")
-        raise Exception()
     except Exception as e :
         st.error(f"Une erreur est survenue: {e}")
         logger.error(f"Une erreur est survenue: {e}")
-        raise Exception()
 
 
 
